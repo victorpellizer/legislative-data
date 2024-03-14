@@ -10,11 +10,11 @@ class ChallengeService:
         payload: dict
     ):
         """
-        Method that answers the questions and adds some HTML tags to the answers
+        Method that handles the questions and adds some HTML tags to the answers
         """
         first_answer = self.solve_first_question(payload)
         second_answer = self.solve_second_question(payload)
-        pretty_answers = self.make_pretty_answers(
+        pretty_answers = self.make_pretty_answer(
             {
                 'first_answer':first_answer,
                 'second_answer':second_answer
@@ -74,7 +74,7 @@ class ChallengeService:
             del bill['vote_id']
         return bills
         
-    def make_pretty_answers(
+    def make_pretty_answer(
         self,
         answers
     ):

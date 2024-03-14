@@ -9,3 +9,5 @@ To execute it:
 2 - Open the legislative-data folder on shell
 3 - Execute the command "python3 main.py"
 4 - Open the resulting file, result.html, in output folder
+
+The code repository can be accessed at https://github.com/victorpellizer/legislative-data
